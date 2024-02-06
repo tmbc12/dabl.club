@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="favicon.png" />
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:title" content="Socratica" />
+	<meta property="og:image" content="../static/favicon.png" />
+
+	<link href="_app/immutable/assets/0.5647fcbf.css" rel="stylesheet">
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">
+		<div class="app svelte-1xh141e">
+			<main>
+				<div class="block">
+					<div class="flex flex-col h-[820px] justify-center bg-primary">
+						<div class="absolute top-5 left-7 sm:left-10 w-10 h-10 bg-black rounded-full"></div>
+						<div class="absolute top-4 md:top-5 right-3 z-30"><button
+								class="w-10 h-10 bg-black rounded-full flex flex-col justify-center items-center"
+								data-svelte-h="svelte-63x55o">
+								<div class="w-3 h-0.5 bg-white mb-1"></div>
+								<div class="w-3 h-0.5 bg-white"></div>
+							</button></div>
+						<div class="absolute top-5 left-1/2 transform -translate-x-1/2" data-svelte-h="svelte-95mc1l"><a
+								href="index.html">
+								<h1 class="text-2xl font-tiempos-headline">Socratica</h1>
+							</a></div>
+						<div>
+							<div>
+								<div class="flex flex-col items-center w-full" data-svelte-h="svelte-fvki6b">
+									<h2 class="text-[45px] mt-5 sm:text-5xl md:text-5xl font-tiempos-headline z-10">Get
+										Involved</h2>
+								</div>
+								<form class="flex flex-col items-center mt-12"><input type="email" name="email"
+										placeholder="Your Email" required class="p-2 mb-4 border rounded outline-none"
+										value=""> <input type="text" name="city" placeholder="Your City" required
+										class="p-2 mb-4 border rounded outline-none" value=""> <select
+										name="sessionType" class="p-2 mb-4 border rounded outline-none">
+										<option value="run" data-svelte-h="svelte-1ig8nwt">Run a session</option>
+										<option value="join" data-svelte-h="svelte-1qwm2gn">Join a session</option>
+									</select> <button type="submit"
+										class="bg-black text-white p-2 rounded border border-cool-grey hover:bg-[#706F6B] transition-colors duration-500 ease-in-out"
+										data-svelte-h="svelte-19zrjtf">Submit</button>
+									<p></p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div> <img src="_app/immutable/assets/GreenGuy.69198a7c.png" alt="Green Character"
+					class="absolute top-[5%] right-[50%] transform scale-[0.27] md:top-[5%] lg:left-[15%] md:transform-scale-[0.6]">
+				<img src="_app/immutable/assets/OrangeGuy.69ce8c4d.png" alt="Orange Character"
+					class="absolute top-[5%] left-[10%] transform scale-[0.4] md:top-[5%] lg:left-[43%] md:transform-scale-[0.6]">
+				<img src="data:image/png;base64,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"
+					alt="Yellow Character"
+					class="absolute top-[16%] left-[67%] transform scale-[0.4] md:top-[14%] lg:left-[66%] md:transform-scale-50">
+				<img src="_app/immutable/assets/BlueGuy.77afc85a.png" alt="Blue Character"
+					class="absolute top-[47%] right-[63%] transform scale-[0.4] md:top-[45%] md:left-[15%] md:transform-scale-50">
+				<img src="_app/immutable/assets/PurpleGuy.14335db4.png" alt="Purple Character"
+					class="absolute top-[60%] right-[40%] transform scale-[0.27] md:top-[52%] md:left-[23%] md:transform-scale-55">
+				<img src="_app/immutable/assets/PinkGuy.77376dd6.png" alt="Pink Character"
+					class="absolute top-[65%] left-[30%] transform scale-[0.4] md:top-[61%] md:left-[54%] md:transform-scale-55">
+				<img src="_app/immutable/assets/BeigeGuy.f9ee3898.png" alt="Beige Character"
+					class="absolute top-[40.5%] left-[58%] transform scale-[0.27] md:top-[41.5%] md:left-[67.5%] md:transform-scale-55">
+			</main>
+			<footer class="bg-[#4A4948] min-h-fit w-full bg-[url('/noise.png')] svelte-1xh141e"
+				data-sveltekit-preload-data="hover">
+				<div class="w-full grid xs:grid-cols-3 md:grid-cols-4 px-10 sm:px-14">
+					<div class="pt-16">
+						<h3 class="text-[#FBF8EF] font-base text-sm -tracking-[0.48px] leading-[20px] pb-4 font-mono"
+							data-svelte-h="svelte-vxxkpp">FRIENDS OF SOCRATICA</h3>
+						<div
+							class="text-[#FBF8EF] opacity-80 font-light -tracking-[0.48px] text-xs sm:text-xs md:text-xs lg:text-sm font-graphik">
+							<p class="leading-[26px]"><a href="map%3Flocation=waterloo.html" target="_blank">Waterloo,
+									ON <img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=toronto.html" target="_blank">Toronto, ON
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=vancouver.html" target="_blank">Vancouver,
+									BC <img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=cambridge-uk.html"
+									target="_blank">Cambridge, UK <img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=kingston.html" target="_blank">Kingston,
+									ON <img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=berkeley.html" target="_blank">Berkeley,
+									CA <img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=western.html" target="_blank">London, ON
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=mit.html" target="_blank">Cambridge, MA
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=stanford.html" target="_blank">Stanford,
+									CA <img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=usc.html" target="_blank">Los Angeles, CA
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=montreal.html" target="_blank">Montreal,
+									QC <img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=washington.html" target="_blank">Seattle,
+									WA <img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+							<p class="leading-[26px]"><a href="map%3Flocation=unc.html" target="_blank">Chapel Hill, NC
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+										alt="Arrow Down Right" class="w-3 h-3 inline-block opacity-80"></a> </p>
+						</div>
+					</div>
+					<div class="pt-16" data-svelte-h="svelte-1qw3q7f">
+						<h3 class="text-[#FBF8EF] font-base text-sm -tracking-[0.48px] leading-[20px] pb-4 font-mono">
+							MORE LINKS</h3>
+						<div
+							class="text-[#FBF8EF] opacity-80 font-light -tracking-[0.48px] leading-[33px] text-xs sm:text-xs md:text-xs lg:text-sm font-graphik">
+							<p class="leading-[26px]"><a href="index.html">Back to Top</a></p>
+							<p class="leading-[26px]"><a href="about.html">About</a></p>
+							<p class="leading-[26px]"><a href="map.html">Map</a></p>
+							<p class="leading-[26px]"><a href="get-involved.html">Get Involved</a></p>
+							<p class="leading-[26px]"><a href="https://www.youtube.com/watch?v=ydYDqZQpim8"
+									target="_blank">Easter Egg</a></p>
+							<p class="leading-[26px]"><a
+									href="https://socratica.notion.site/Code-of-Conduct-52fb005f7e3a452096e235995a2f92e5"
+									target="_blank">Code of Conduct</a></p>
+							<p class="leading-[26px]"><a href="https://donate.stripe.com/5kA6qZcondXE8Te008"
+									target="_blank">Donate</a></p>
+						</div>
+					</div>
+					<div class="pt-16 col-span-2">
+						<h3 class="text-[#FBF8EF] font-base text-sm -tracking-[0.48px] leading-[20px] pb-4 font-mono"
+							data-svelte-h="svelte-1jmtdat">NEWSLETTER</h3>
+						<div
+							class="min-w-4/5 max-w-[400px] bg-[#2A2928] py-[8px] px-[10px] rounded-full flex justify-between">
+							<input placeholder="email@gmail.com"
+								class="bg-[#2A2928] text-[12px] md:text-base -tracking-[0.48px] w-full outline-none pl-4 rounded-full text-[#FFFFFF] font-graphik"
+								value=""> <button type="submit"
+								class="text-black py-[7px] px-[20px] bg-[#FBF8EF] rounded-[100px] text-[12px] md:text-base font-semibold font-normal hover:opacity-95 transition-colors duration-500 ease-in-out"
+								data-svelte-h="svelte-j2nh07">Submit</button></div>
+					</div>
+				</div> <img src="socratica_logo_footer.svg" alt="Sponsor Logos" class="px-8 pt-[23px] pb-5">
+			</footer>
+		</div>
+
+		<script>
+			{
+				__sveltekit_1refjg2 = {
+					base: new URL(".", location).pathname.slice(0, -1),
+					env: {}
+				};
+
+				const element = document.currentScript.parentElement;
+
+				const data = [null, null];
+
+				Promise.all([
+					import("./_app/immutable/entry/start.0884d11e.js"),
+					import("./_app/immutable/entry/app.1bcf1b08.js")
+				]).then(([kit, app]) => {
+					kit.start(app, element, {
+						node_ids: [0, 5],
+						data,
+						form: null,
+						error: null
+					});
+				});
+			}
+		</script>
+	</div>
+</body>
+
+</html>

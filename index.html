@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="Socratica" />
+  <meta property="og:image" content="../static/favicon.png" />
+
+  <link href="_app/immutable/assets/0.5647fcbf.css" rel="stylesheet">
+  <title>/dabl.club</title><!-- HEAD_svelte-1txeix6_START -->
+  <meta name="description"
+    content="We host weekly co-working sessions for you to work on your passion projects with likeminded people.">
+  <!-- HEAD_svelte-1txeix6_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+  <div style="display: contents">
+    <div class="app svelte-1xh141e">
+      <main>
+        <section class="block">
+          <div class="flex flex-col h-[670px] sm:h-[800px] justify-center bg-primary">
+            <div class="absolute top-4 md:top-5 right-3 z-30"></div>
+            <div class="absolute top-5 left-1/2 transform -translate-x-1/2" data-svelte-h="svelte-u1nz3d">
+              <h1 class="text-2xl font-tiempos-headline">/dabl.club</h1>
+            </div>
+            <div class="container mx-auto max-w-screen-xl px-6 md:px-8  ">
+              <div class="flex flex-col items-center relative lg:h-[50px] mt-16 -mb-8 md:mb-0"><button
+                  class="absolute inset-0 opacity-0 cursor-pointer"></button> <img id="socraticaLogo"
+                  src="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/b75eadf5-ae81-1b48-f5b3-3abbdb7d13cc.png"
+                  alt="Socratica Logo" class="h-[50px] w-auto object-contain "></div>
+              <div style="margin-top: 60px;"></div>
+              <div class="flex space-x-4 mb-5 mt-41 md:mb-7">
+                <div class="w-4/6 md:w-1/9">
+                  <p class="text-md sm:text-xl lg:text-3xl font-tiempos-headline text-[#41403F]"
+                    data-svelte-h="svelte-1rbqes3">Building a <span class="border-dashed border-b-2"
+                      style="border-color: #41403F; border-width: 0 0 2px; border-image: repeating-linear-gradient(to right, #41403F, #41403F 5px, transparent 5px, transparent 10px) 1/1 0 round">hub
+                      for developers</span>
+                    to co-work in an environment <span class="italic">that helps build passion for like minded
+                      people.</span></p>
+                  <div class="mt-4"><a href=" "  rel="noopener noreferrer"
+                      data-svelte-h="svelte-1gvl2f2"><button
+                        class="bg-black px-4 py-2 md:px-6 md:py-3 mb-1 rounded-full border border-gray-300 text-[10px] text-xs lg:text-sm text-white font-mono hover:bg-[#706F6B] transition-colors duration-500 ease-in-out"><img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
+                          alt="Arrow Down Right" class="w-3 h-3 md:w-6 md:h-6 inline-block">
+                        SPOT US</button></a> <button
+                      class="bg-primary px-4 py-2 md:px-6 md:py-3 rounded-full text-[10px] text-xs lg:text-sm font-mono border border-gray-300 hover:bg-cool-grey transition-colors duration-500 ease-in-out"
+                      data-svelte-h="svelte-1chcusw"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAwCAYAAAC4wJK5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAcBSURBVHgB7VnNchpHEO5ZxF+UA1VROUevb4tQqtATGD2BpSew9ASSbrkJjjlJegKJJ5D8BEJPYFwxLLEP3mvKOpCqWMJgZtK9MLO9CywL6JADXaVid3Z++pvu+bp7BLCWtaxlLf9HEfDMUrbtwvd8pmKBeK3AsgFUOdxDdQWILv42Jaj77FO/0fS8LqwgzwZiZ8epqCGcgRBlpVRhocEgbhUM66776RaWkJVBaOUVQAVWF09YUGu1OteLDFoaBLnNIJ9H5dXJlEkb6CofNsBqDJRqUlun0/Ecx7FTqVTBktL+AbJiCes1Wq08bXxawVETx0ACWQpEGZXpC7jDR9tMJERXSXUpUqnbVqvVTDoXARMCqqjIaz4fztgVljpNYpWFQUwDgAhupVSnnYQ7N00IjAVwiBqdQVjDarvdqcWNXQhEFADtPqDyrU54t3xX28ztK4W767uLKIzHeLigh6vS3316CI2oy/hgJjYpHkhiEKRYP597HwIgrD3uOn6fn3LHSKEnSRkKXek6LaHGwZTL5cLge++Gk4UCceq67sXUOSChlLadK9zZw1kAdorFY4U7tji9jhWxxEWr5Z6G1iw61wjkrX63UrD38WOnER1rQRIAJedQA/CFXIgB2HacM2SjCw6AGAYtcmop2JMKXrXdjqBfeqd2+s7XQFI42S46X8hldVs6mzvBDTPryCFckbWj+iWyBE0O2kfR/OifRxwA+Szr7qGiRx87kzsWFcZMb/n4DALV7uXTsiXemw0SUMP1q3yeuZYgK0BwyDyJ/qu/kQtxAKhM/fGpt5sEAAmxmet2DtEK3I188tA7Tn3kUAaHWonjqDXmWgL98s4cMLYLY6b6EvRUl233r1Dg8zdAwls12gT6G7GTBfUo/5dKpTL61J3ecXK3ltvZm6fHuO9siSpKPq1jAT/opBz6/CszDhXqy+ENhILXhEykGL8Vi/tDUDf6XYE80PnUjuNU5Ih6Se1u5unplU4cY91pkOL5kHinARA4ftAR3B4HPsAdnQOAxFYSrra3HRPc/nRdVFhcmhXBOtfP5KI+K47gFX78nDPpSiwI9NU35pmxyUCI/WAhaPBITf5sXIIWVVDT7CSs1K7AQw/kUsHE1WKxaNwwk81WA2XBpgST6WMA4tkMqBdiBFe1TUfLagRfAnCoRF0/RklgKNVuu9OpapBEyxTdM9ncLpGAWQfUuX8mUJrNZjdG2QZbt8LaZwvPMNPfvnkQoDPtw9DE4th0QQvMyqVIUTy0hzxWKCmNW0mAazansXrYpcDWLJUo2PkLs+qLBzWuaAh0r2cKnFKxeI6xRhHD8GBGQNkSFU6r3P8dNgaYKw42N+1YELMGJm3XoKld1xxEkTwGjHe2qZXVSvlvSjb0c5pZHts9/Ux1SSyIXC7H6l5RWKw9MPXIUgHj0DfKcPWLVOpD8GkYKAviH9PHCiw/rX0mCPJbblKtVLRdW8Bv5wy2mTc+3nZdtIQy7mVJsfTFALqgZ57F6HkjbgD6OC1WGCnlm7o5/kC/ldFE/sG7GC9Qw0zWbx8ndPtIPXUE9xLjitl9XbL6gOhbRKm49kwudzHo9fx3ndHGsxPAvX6WUlaCL+JdsFhAt37OFD6sNr6fhTJgTCBDQZPVDBv/9oKyVgSuqlTKWM5nNqRpXojFgrCswD24suls9lq7FCnBgxXFhQgQYIrdPj72TLLXZ9kruaImg1FGEDDdvJo9FkQ6nTN+TMrOCkiowJn+poFQlE6BOKBkTdcV7bZ74DFFsRAKEkYWNHm6E607pslCWSyVkq1xLeGXkP3vd8GO4W0HDI+SXIBNuWwIJZCl7eJ7PS+lKdEaPipzgx0PSOTbOpcha2BacQAmVqgCJmw3lN2WwzEjUB4ZjmqQARY5wGp1nkCOqkg1PSOYpSMkkFAuT5UXFj48mE3cToxANckVlDC8/hLdaj9UwhKAH2i9TyPrRS8jolXkLNmABDJEk7IS0e7n81f4S1bQN3t7k2Um3smiXqAYLP7iX91YB+4n1xxaulHEXrb+zqvIOEkl6fTw8NB98cvW37gzmuudFy+27K9fH97p7/h3++vW1j0WLogHyrPmGqfnfzz2ekefP3/2dPu4Vv/d9FNw6iYscxe6PMOFquEbOtXMKHEQvQCz0S1+zuXKim7Iha4t6OykmtPokhLE8J3uZKn7bCBgKhDwMJ+5nHWxFSdEEnKozsn1mEJ1StNhAVkYBMkUICR0NXmdkVCPu82mw0ul5bR/BywDYDxuOZnNSr54ODWyk/RC7KSw75R/woxptraMNf3xsKKUHOT1kVVsWEbQesRCq9yorwxCiw/GEm9wwkqC+1iP0gxkqAtvxf/XkTwbCC6UR1HVJelaRrOTEl1MDzxKw1fZ9bWsZS3z5T9Y7e7KSYZQdAAAAABJRU5ErkJggg=="
+                        alt="Spiral" class="w-3 h-3 md:w-6 md:h-6 inline-block">
+                      KNOW US</button></div>
+                </div>
+                <div class="flex-1 flex flex-col items-end justify-end">
+                  <p class="font-mono text-[8px] md:text-sm text-[#706F6B]" data-svelte-h="svelte-i4stpt"> 
+                  </p>
+                  <p class="font-graphik text-right text-[10px] md:text-sm">  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="-mt-28" data-svelte-h="svelte-1wd7g07"><img
+              src="_app/immutable/assets/socratica-people.9a5c9bc2.png" alt="People at Socratica"
+              class="w-full min-h-40"></div>
+        </section>
+        <section id="what-we-are" data-svelte-h="svelte-16sxwz3">
+          <div class="bg-primary bg-cover bg-center bg-no-repeat px-2"
+            style="background-image: url(_app/immutable/assets/BackgroundLines.37b66c2a.png)">
+            <div class="flex justify-center items-center pt-40 pb-10"><span
+                class="px-4 py-2 md:px-6 md:py-3 rounded-full border-2 text-[10px] text-xs md:text-sm font-mono inline-block p-2"
+                style="border-color: #C6482C; color: #C6482C"><img
+                  src="data:image/png;base64,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"
+                  alt="Hand waving" class="w-4 h-4 md:w-6 md:h-6 inline-block">
+                WHO WE ARE</span></div>
+            <div
+              class="flex flex-col justify-center items-center text-[16px] sm:text-[20px] md:text-4xl font-tiempos-headline md:pt-8"
+              style="font-weight: 300;">
+              <div class="flex items-center whitespace-nowrap sm:whitespace-normal"><img
+                  src="data:image/png;base64,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"
+                  alt="red circle" class="w-10 md:w-16 pr-2 pl-2 md:pr-4 md:pl-4">
+                <div class="inline-block pb-2">A community <span class="border-dashed border-b-2"
+                    style="border-color: #CDC19F; border-width: 0 0 2px; border-image: repeating-linear-gradient(to right, #CDC19F, #CDC19F 5px, transparent 5px, transparent 10px) 1/1 0 round">
+                    of artists,
+                    <span class="italic">craftsmen </span>
+                </div>
+              </div> </span>
+              <div class="flex items-center whitespace-nowrap sm:whitespace-normal">
+                <div class="inline-block pb-1"><span class="font-glyphworld">e</span>verything
+                  <span class="font-glyphworld">in</span>
+                  <span class="font-glyphworld">b</span>etween
+                </div> <img
+                  src="data:image/png;base64,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"
+                  alt="green circle" class="w-10 md:w-16 pr-2 pl-2 md:pr-4 md:pl-4">
+              </div>
+              <div class="flex items-center whitespace-nowrap sm:whitespace-normal">
+                <div class="inline-block">and <span class="italic relative text-stone bottom-0 left-0 border-b-4"
+                    style="border-color: #CDC19F"> for all </span></div> <img
+                  src="data:image/png;base64,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"
+                  alt="yellow circle" class="w-10 md:w-16 pr-2 pl-2 md:pr-4 md:pl-4">
+                <div class="inline-block font-tiempos-headline"><span
+                    style="background: linear-gradient(to right, #899248, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"><span
+                      class="italic">things</span> tech.</span></div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center font-Graphik text-zinc-800 pt-5 md:pt-8 pb-40 px-12">
+              <div class="text-center text-[12px] md:text-sm"><span class="block md:hidden">Dabl is a IRL co-working
+                  space bringing together people <span class="italic"> who want to
+                  </span>
+                  make a dent in
+                  <a href="https://lu.ma/socratica" target="_blank" class="border-b-2"
+                    style="border-color: #706F6B; color: #706F6B;">the universe.</a>.</span>
+                <div class="hidden md:block">Dabl is a IRL co-working space bringing together people</div>
+                <div class="hidden md:block mx-auto"><span class="italic">who want to</span> make a dent in
+                  <a href="map.html" class="border-b-2" style="border-color: #706F6B; color: #706F6B;">the
+                    universe.</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="block" data-svelte-h="svelte-104hcuf">
+          <div class="bg-primary pt-24 md:pt-40">
+            <div class="pl-8 md:pl-20 lg:pl-44"><span
+                class="px-4 py-2 md:px-6 md:py-3 rounded-full border-2 text-[10px] text-xs md:text-sm font-mono inline-block p-2"
+                style="border-color: #854F6F; color: #854F6F"><img
+                  src="data:image/png;base64,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"
+                  alt="Alien" class="w-4 h-4 md:w-6 md:h-6 inline-block">
+                WHO CAN COME</span></div>
+            <div class="pt-6 pl-8 md:pl-20 lg:pl-44 w-11/12 md:w-full">
+              <div class="text-[20px] text-xl xs:text-3xl sm:text-3xl md:text-4xl font-tiempos-headline">
+                Anyone that shows an inclination towards building something 
+                <br class="hidden md:block">bigger than them, this space is for <i>you</i>
+              </div>
+              <div class="font-Graphik pt-2 md:pt-6 text-[11px] sm:text-[14px] sm:text-md">Just show up, we’ve got your back.
+              </div>
+            </div> <img src="_app/immutable/assets/WhoCanCome.07b68336.png" alt="Who Can Come"
+              class="-mt-18 sm:-mt-32 md:-mt-36 lg:-mt-80">
+          </div>
+        </section>
+        <section class="bg-primary" data-svelte-h="svelte-xm3ktq">
+          <div class="flex bg-primary pt-12 md:pt-40 md:pb-40">
+            <div class="md:pl-16 lg:pl-20 flex flex-col justify-start"> <img
+                src="_app/immutable/assets/JoinUs.64553120.png" alt="JoinUs"
+                class="w-200 h-400 md:w-[792px] md:h-[476px] hidden md:inline-block"></div>
+            <div class="flex-grow pl-6 sm:pl-10 md:pl-20">
+              <div class="pl-4 pt-12"><span
+                  class="px-4 py-2 md:px-6 md:py-3 border-2 rounded-full text-[10px] text-xs md:text-sm font-mono inline-block p-2"
+                  style="border-color: #758F2A; color: #758F2A;"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAwCAYAAAC4wJK5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKTSURBVHgB7Zk/b9NAGMafc6MilIEszLgb0CKZlYWysZFv0PQTkBOkqlhiNpQGrv0EpJ8AGJnIxthE0NLRMwtZ6NA2Od5z7NRESeQ/lzSu7iclOZ99Zz9+3/cSPwEMBoNhGWHjHTXhOAwXW4AsS8DG4uhYUrZus1uHLu/0kgz8T0Ttw8ZLsME+rhdvBavP3vGOF3fASERNrFfo7n/EcuAVsfo4bkQKV01Zj/R3JCze5D/bJM4J9pWDfT06wVrSkM/CFXbpL4pqfkHnKtGnfYbzqtoVZ7wfiV2xsdnH4FvQ4VkYUDhPveiBJOaITuAEw7b3+HELmnklHpUt9D8Fm94eP1mLM85Sb5eji6PLBLrjAhQM8kukbWMOvOc/Pkc27ZjDhiLo7l+lBsMf5AxfhATzRj0SZVc4JeQIX4QqYFULQR8V2bmLHGGFjT5W+KiX4Q5yxEjEsKjYNqUWL8ozjhxRiG7MY9lcBAVoYkc8rMuYX05RGNh+gx9nirwFfVSQAglZRUa0iRgAh0jHATKiLZ2a/MRFinTSgc50ujZuhAizOo1RQQrM6hRgVqdlwYhYFrTVhOK1WK9aQ7ciNTLSpmXbHfYxb9YvbG0iAt9KSOiD5qqHrR3xoNTgvyYae9rSaV4OSAhFoz7t2V9bJBq0xFI0XoTeFD2zK/uli4zQxYdz0rP/hTLYWuPHaK0J5U1RCoQeVrcx/O7IBNUFwjmnRTt2OkVtHclwD0tEKhHTvCm6Y1sTj89AnDlji5jgTR298c1mf2Vy6KW8XFttM9+e77eRgSRzMiRgzPBdKBSRt80pNbaCBHz/+vv0yfO7jJRvYoHMEqBIFImQXXHfvgRzLbCn8/tLjPXAZFtK60ClMgwGgyF3/APJWeyHynh2KgAAAABJRU5ErkJggg=="
+                    alt="Scroll" class="w-4 h-4 md:w-6 md:h-6 inline-block">
+                  HOW WE WORK</span></div>
+              <div class="p-5 pr-6 md:pr-10 lg:pr-40 text-zinc-800">
+                <div class="text-xl sm:text-3xl lg:text-4xl font-tiempos-headline lg:pt-9" style="font-weight: 300;">
+                  Walk-in, 👋,
+                  <br> <span class="md:hidden">book your space and 🖋️️🎨get to coding.💻 <span
+                      class="italic"></span> </span> <span class="hidden md:inline">book your space and 🖋️️🎨</span> <span class="hidden md:inline">get to coding.💻  <br class=""> <span class="italic" style="color: #CFCCC4">+
+                       snacks are on us.</span>
+                </div>
+                <div class="pt-5 text-[11px] md:text-[14px] text-zinc-800 font-inter"> Dabl is a IRL co-working space bringing together people who want to make a dent in the universe.
+                </div>
+              </div>
+            </div>
+          </div> <img src="_app/immutable/assets/Polaroid.c1c63f22.png" alt="Polaroid" class="mx-auto"
+            style="width: 1200px; height: 1000;">
+        </section>
+        <section data-svelte-h="svelte-6xgpya">
+          <div class="flex bg-primary pb-40 pl-8 md:pl-16 lg:pl-20 bg-cover bg-center bg-no-repeat"
+            style="background-image: url(_app/immutable/assets/BackgroundLines2.1a07f0c4.png)">
+            <div class="flex-grow md:pl-16 lg:pl-20">
+              <div class="pt-14"><span
+                  class="px-6 py-3 border-2 rounded-full text-[10.5px] text-xs md:text-sm font-mono inline-block p-2"
+                  style="border-color: #2C64B7; color: #2C64B7;"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUcSURBVHgB7VnNbttGEJ4ladhFWlRvUPpWoDYqP0HoSwH7YvkJIsNJ0ZuVJxD9BJFvBZLA0hNYvdi5mX6CskhyrvoE1aFGVETidIZcUpS0uyJlyQUCfcBC3NXsz7czu7M7C7DGGmt8cRCwZHz/y4278RmrQlhuBFjJOoqghxb0nK8HYdg67sMSsRQSO89vPGGJI4igjrmB64GhsKzAtvAi/PWgBw/Eg0jsvripI4ozGlQVFkdA6fzDm4MAFsRCJHjm6adJyZttUPRJGyEK6AmEv9Jyyn9HeVdVJ64noG3bcL6IZkqT2Hnx7gwQW5ON0MBF1KGRdovM6O7pdY1GXUOAZxPtEHGI8OX7t4ddKIFSJHZPby5pRuvjyvGsX9BibS2yWKu0CYyG4E+TIfg0GedF2ylMYpoAIXAcOFnGwow3BgGXmJhbisJECpGgTtj+/awA8eLD28MGLBGsleFQXOU3CdLyy49vDlvz6s4lkexAcJkr4p3EhxWgWr+qDJ2vbsdEeK1Z+x9f/xSa6lnGRml2INmFErAGVkSAEbaP+87w0368wJMOKwKHl/PqGUmMRqKZ2ik37Hzzrw8rBhOhrXaftZCUiOoPz6+Npqs1p8RG4c80j8Lem6fWZYLWoQ+ZFQjW0DYTVMlqNcFaSL/ZET0mAYYzHLTG2sDKZ2ezrpNVkuAFhohZpQjsC3hkJLOOWb/kk450skoSI3vTyzJChAYt8GGPdhPaDSE2PReKgZ3b37JeUyeUaCODx5OrklObk2WNWSP+BnrUYHwWcinN3UkkfEgmIP32VEJyDQRpfrSxVVPJKUmQKbm5bAB6eFP5AsfwmKxbtB6CyCYRI/VpWbOwRSZMKjUt6PZU3qS1FD2YnBjOa/uwMOql3yiEq5Jxpgtir5m72Oi2NYmA0jaluvwOoBj2ZR3up01J24e9IULa6mNYAn5UycyQgK2tCshKY89pBMv4UB5tWBIs+AIwS2IwyFRLV88iC3W1GEXZGDBzfpOYIZGsgbGn1O3Nj4UhWuP+EUsdO3pZI86WKQjAjood1isoDxcSR8lOsmaQ87IvxD9UAmoSGN0pG5lFXf42ZCqDM9m2S+nIIPc0/RC2HagE1CSE6KoaUaCT+2ZtFCXSnJK9UwnJ+4yX5m0rUvoTJYnEwWWLyJMhGhX4bJNvmInw0cPVyHuQmJCfK+NDXlslPBpNWEGgu88rScSLG6P8LOsOaUz0GGDCn9QhsXMe7Cs5YCb2uyzzcrLch0l7+etARyekvRTJ2b/NFe0bYkouJIN9BsXBGmgY+s+CE+x0378+2NbJap0dD1jkbJ5DKobttgeJBvg4EYAerLk2pT0wEJBrwc8VGUM3julPezhoUPThiP0F37XpKMzmcWKoEsjk8ljkb0UOPpTJdBaDauOqMrofW4DUQttUZ5GQTanoXBkwgeH95i0dV6vJ4ETfdnBvXoBu7tkpngXE/PXU3/353SLOzYg4MJEjwIggKhRgLhPGbFMYM1u4rGYOrawwjFk4SFcqoLxzet2i0Z9NFfsUk+0sQiYOKMexrXFQglE0fJmifGh/Ih6UNkKOUWCXZrIzL7Qf2/0/8Xls5n1DRtmPyz64LPTIkswg3E6pPz+QiUcWegr7NkIOSfIdWSgPlIKOOvaTTyeLPBE8+LmLfpoqMiUQwP/x3DWNeGGysxPwtCChgNIdhUa7y4gsLv0JOLV5evJ16cnX5TKLTSzCfmTb4caT+96yn4DXWGONSfwHqB4YDgXqyFEAAAAASUVORK5CYII="
+                    alt="Smiley" class="w-4 h-4 md:w-6 md:h-6 inline-block">
+                  WHY WE DO WHAT WE DO</span></div>
+              <div class="py-5 md:pr-24 md:pr-40">
+                <div
+                  class="text-xl xs:text-3xl sm:text-3xl md:text-4xl text-zinc-800 font-light font-tiempos-headline pt-4"
+                  style="font-weight: 300;">   We love doing something   
+                <br class="sm:hidden"> extra for our community.
+                  <div> Do stay.
+                    <br class="sm:hidden md:hidden"> <a href="about.html" class="border-b-2"
+                      style="border-color: #706F6B; color: #706F6B; text-decoration: none;">  We’ve got more to say.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-[#4A4948] min-h-fit w-full bg-[url('/noise.png')] svelte-1xh141e"
+        data-sveltekit-preload-data="hover">
+        <div class="w-full grid xs:grid-cols-3 md:grid-cols-4 px-10 sm:px-14">
+          <div class="pt-16">
+            <h3 class="text-[#FBF8EF] font-base text-sm -tracking-[0.48px] leading-[20px] pb-4 font-mono"
+              data-svelte-h="svelte-vxxkpp">MORE LINKS</h3>
+              <div
+              class="text-[#FBF8EF] opacity-80 font-light -tracking-[0.48px] leading-[33px] text-xs sm:text-xs md:text-xs lg:text-sm font-graphik">
+              <p class="leading-[26px]"><a href="index.html">Back to Top</a></p>
+              <p class="leading-[26px]"><a href="">About</a></p>
+              <p class="leading-[26px]"><a href="">Map</a></p>
+              <p class="leading-[26px]"><a href="">Get Involved</a></p>
+              <p class="leading-[26px]"><a href="" target="_blank">Easter
+                  Egg</a></p>
+              <p class="leading-[26px]"><a
+                  href=""
+                  target="_blank">Code of Conduct</a></p>
+              <p class="leading-[26px]"><a href=""
+                  target="_blank">Donate</a></p>
+            </div>
+          </div>
+          <div class="pt-16" data-svelte-h="svelte-1qw3q7f">
+            <h3 class="text-[#FBF8EF] font-base text-sm -tracking-[0.48px] leading-[20px] pb-4 font-mono">SOCIAL LINKS
+            </h3>
+            <div
+              class="text-[#FBF8EF] opacity-80 font-light -tracking-[0.48px] leading-[33px] text-xs sm:text-xs md:text-xs lg:text-sm font-graphik">
+              <p class="leading-[26px]"><a href="">INSTAGRAM</a></p>
+              <p class="leading-[26px]"><a href="">TWITTER</a></p>
+              <p class="leading-[26px]"><a href="">FACEBOOK</a></p>
+              <!-- <p class="leading-[26px]"><a href="get-involved.html">Get Involved</a></p>
+              <p class="leading-[26px]"><a href="https://www.youtube.com/watch?v=ydYDqZQpim8" target="_blank">Easter
+                  Egg</a></p>
+              <p class="leading-[26px]"><a
+                  href="https://socratica.notion.site/Code-of-Conduct-52fb005f7e3a452096e235995a2f92e5"
+                  target="_blank">Code of Conduct</a></p>
+              <p class="leading-[26px]"><a href="https://donate.stripe.com/5kA6qZcondXE8Te008"
+                  target="_blank">Donate</a></p> -->
+            </div>
+          </div>
+          <div class="pt-16 col-span-2">
+            <h3 class="text-[#FBF8EF] font-base text-sm -tracking-[0.48px] leading-[20px] pb-4 font-mono"
+              data-svelte-h="svelte-1jmtdat">NEWSLETTER</h3>
+            <div class="min-w-4/5 max-w-[400px] bg-[#2A2928] py-[8px] px-[10px] rounded-full flex justify-between">
+              <input placeholder="email@gmail.com"
+                class="bg-[#2A2928] text-[12px] md:text-base -tracking-[0.48px] w-full outline-none pl-4 rounded-full text-[#FFFFFF] font-graphik"
+                value=""> <button type="submit"
+                class="text-black py-[7px] px-[20px] bg-[#FBF8EF] rounded-[100px] text-[12px] md:text-base font-semibold font-normal hover:opacity-95 transition-colors duration-500 ease-in-out"
+                data-svelte-h="svelte-j2nh07">Submit</button>
+            </div>
+          </div>
+        </div>
+        <img src="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/1b1d7495-5eb8-26fe-271a-9a5f3e8f7c23.png"
+          alt="Sponsor Logos" class="px-8 pt-[23px] pb-5">
+      </footer>
+    </div>
+
+    <script>
+      {
+        __sveltekit_1refjg2 = {
+          base: new URL(".", location).pathname.slice(0, -1),
+          env: {}
+        };
+
+        const element = document.currentScript.parentElement;
+
+        const data = [null, null];
+
+        Promise.all([
+          import("./_app/immutable/entry/start.0884d11e.js"),
+          import("./_app/immutable/entry/app.1bcf1b08.js")
+        ]).then(([kit, app]) => {
+          kit.start(app, element, {
+            node_ids: [0, 2],
+            data,
+            form: null,
+            error: null
+          });
+        });
+      }
+    </script>
+  </div>
+</body>
+
+</html>
