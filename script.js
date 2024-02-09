@@ -10,7 +10,7 @@ img.onload = function(){
 }
 
 // Update the URL of the new image file
-img.src = 'https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/84a46e8f-6367-b7d4-85b8-73c6eed2a449.png';
+img.src = '/Slide 16_9 - 49.jpg';
 
 // Handle drawing function
 function drawDot(mouseX, mouseY) {
