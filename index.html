@@ -17,11 +17,79 @@
   <meta name="description" content="">
   <!-- HEAD_svelte-1txeix6_END -->
   <style>
+@keyframes textStagger {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animated-element p,
+.animated-element button {
+  animation: textStagger 0.5s ease-in-out forwards;
+}
+
+    @keyframes openWindow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animated-element {
+  animation: openWindow 0.5s cubic-bezier(0.42, 0, 0.21, 1);
+  /* Adjust the animation duration and timing function as needed */
+}
+@keyframes textScrollAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated-text {
+            opacity: 0;
+        }
 
   </style>
 </head>
 
 <body data-sveltekit-preload-data="hover">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener('scroll', function() {
+            let animatedTexts = document.querySelectorAll('.animated-text');
+            
+            animatedTexts.forEach(function(text) {
+                if (isElementInViewport(text) && !text.classList.contains('animated')) {
+                    text.classList.add('animated');
+                    text.style.animation = "textScrollAnimation 0.5s ease-in-out forwards";
+                }
+            });
+        });
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    });
+</script>
   <div style="display: contents">
     <div class="app svelte-1xh141e">
       <main>
@@ -29,10 +97,10 @@
           <div class="flex flex-col header  h-[670px] sm:h-[800px] justify-center bg-primary">
             <div class="absolute top-4 md:top-5 right-3 z-30"></div>
             <div class="absolute top-5 left-1/2 transform -translate-x-1/2" data-svelte-h="svelte-u1nz3d">
-              <h1 class="text-2xl font-tiempos-headline">/dabl.club</h1>
+              <h1 class="text-2xl font-tiempos-headline animated-element">/dabl.club</h1>
             </div>
 
-            <div class=" mx-auto max-w-screen-xl  px-6 md:px-8 ">
+            <div class=" mx-auto max-w-screen-xl  px-6 md:px-8 animated-element ">
               <div class=" flex flex-col items-center  relative lg:h-[50px] mt-16 -mb-8 md:mb-0">
                 <figure class="" id="bridgeContainer">
                   <canvas id="bridge" width="750" height="495"></canvas>
@@ -82,7 +150,7 @@
         </div>
 
         <section class="bg-primary" data-svelte-h="svelte-xm3ktq">
-          <div class="flex bg-primary  md:pt-40 md:pb-40 centre" style="justify-content: center; ">
+          <div class="flex bg-primary  md:pt-40 md:pb-40 centre animated-text" style="justify-content: center; ">
             <div class="container">
               <div class="card">
                 <div class="face face1">
@@ -137,8 +205,8 @@
 
         <section id="what-we-are" data-svelte-h="svelte-16sxwz3">
           <div class="bg-primary bg-cover bg-center bg-no-repeat px-2"
-            style="background-image: url(_app/immutable/assets/BackgroundLines.37b66c2a.png)">
-            <div class="flex justify-center items-center pt-24 pb-10"><span
+            style="background-image: url(   )">
+            <div class="flex justify-center items-center pt-24 pb-10 animated-text"><span
                 class="px-4 py-2 md:px-6 md:py-3 rounded-full border-2 text-[10px] text-xs md:text-sm font-mono inline-block p-2"
                 style="border-color: #C6482C; color: #C6482C"><img
                   src="data:image/png;base64,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"
@@ -238,6 +306,31 @@
               </div>
             </div>
           </div>
+
+          <div class="grid-container">
+            <div class="item item1">
+              <img src="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/64c638bd-a0dc-7fd1-f0fe-a0416b5f3013.png" alt="image">
+            </div>
+            <div class="item item2">
+              <img src="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/42b7d2fa-311a-078e-fdaa-14afd6dbe118.png" alt="image">
+            </div>
+            <div class="item item3">
+              <img src="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/53bea0a9-4f52-a10e-4396-9a8e65acae02.png" alt="image">
+            </div>
+            <div class="item item4">
+              <img src="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/43926667-d590-cbc2-03d8-bca59a06d8fe.png" alt="image">
+            </div>
+            <div class="item item5">
+              <img src="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/43926667-d590-cbc2-03d8-bca59a06d8fe.png" alt="image">
+            </div>
+            <div class="item item6">
+              <img src="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/43926667-d590-cbc2-03d8-bca59a06d8fe.png" alt="image">
+            </div>
+            <div class="item item7">
+              <img src="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/43926667-d590-cbc2-03d8-bca59a06d8fe.png" alt="image">
+            </div>
+          </div>
+
           <div class="cards">
             <div class="cards-img">
               <img
@@ -258,7 +351,7 @@
         </section>
         <section data-svelte-h="svelte-6xgpya">
           <div class="flex bg-primary pb-40 pl-8 md:pl-16 lg:pl-20 bg-cover bg-center bg-no-repeat"
-            style="background-image: url(_app/immutable/assets/BackgroundLines2.1a07f0c4.png)">
+            style="background-image: url(   )">
             <div class="flex-grow md:pl-16 lg:pl-20">
               <div class="pt-14"><span
                   class="px-6 py-3 border-2 rounded-full text-[10.5px] text-xs md:text-sm font-mono inline-block p-2"
