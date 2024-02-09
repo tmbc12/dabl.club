@@ -3,158 +3,21 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/cc5fc7d4-a9bc-ff12-a13c-636ee17ef12e.png" />
+  <link rel="icon"
+    href="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/cc5fc7d4-a9bc-ff12-a13c-636ee17ef12e.png" />
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta property="og:title" content="" />
-  <meta property="og:image" content="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/b75eadf5-ae81-1b48-f5b3-3abbdb7d13cc.png" />
+  <meta property="og:image"
+    content="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/b75eadf5-ae81-1b48-f5b3-3abbdb7d13cc.png" />
 
   <link href="_app/immutable/assets/0.5647fcbf.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/style2.css"> -->
   <title>/dabl.club</title><!-- HEAD_svelte-1txeix6_START -->
-  <meta name="description"
-    content="">
+  <meta name="description" content="">
   <!-- HEAD_svelte-1txeix6_END -->
   <style>
 
-#bridge {
-  display: block;
-  margin: 0 auto;
-  background-image: url("https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/84a46e8f-6367-b7d4-85b8-73c6eed2a449.png");
-  background-image: -webkit-image-set(url("https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/84a46e8f-6367-b7d4-85b8-73c6eed2a449.png") 1x, url("https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/84a46e8f-6367-b7d4-85b8-73c6eed2a449.png") 2x);
-  background-size: cover;
-  width: 100%;
-  max-width: 750px;
-  height: auto;
-  cursor: crosshair;
-  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
-}
-
-#bridgeContainer {
-  text-align: center;
-  font-family: Avenir, sans-serif;
-}
-
-#bridgeContainer figcaption {
-  margin-top: 2rem;
-}
-
-.container{
-  width: 1000px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap:wrap;
-  
-}
-
-.container .card{
-  position: relative;
-}
-
-.container .card .face{
-  width:300px;
-  height: 200px;
-  transition:.4s;
-  
-}
-
-.container .card .face.face1{
-  position: relative;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-content:center;
-  align-items: center;
-  z-index: 1;
-  transform: translateY(100px);
-}
-
-.container .card:hover .face.face1{
-  transform: translateY(0);
-  box-shadow:
-    inset 0 0 60px whitesmoke,
-    inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff,
-    0 0 50px #fff,
-    -10px 0 80px #f0f,
-    10px 0 80px #0ff;
-   
-}
-
-
-.container .card .face.face1 .content{
-  opacity: .2;
-  transition:  0.5s;
-  text-align: center;
-
-}
-
-.container .card:hover .face.face1 .content{
-  opacity: 1;
- 
-}
-
-.container .card .face.face1 .content i{
-  font-size: 3em;
-  color: white;
-  display: inline-block;
-   
-}
-
-.container .card .face.face1 .content h3{
-  font-size: 1em;
-  color: white;
-  text-align: center;
-  
-
-}
-
-.container .card .face.face1 .content a{
-   transition: .5s;
-}
-
-.container .card .face.face2{
-   position: relative;
-   background: whitesmoke;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0,0,0,.8);
-  transform: translateY(-100px);
-}
-
-.container .card:hover .face.face2{
-    transform: translateY(0);
-
-
-}
-
-.container .card .face.face2 .content p, a{
-  font-size: 10pt;
-  margin: 0 ;
-  padding: 0;
-  color:#000000;
-}
-
-.container .card .face.face2 .content a{
-  text-decoration:none;
-  color: black;
-  box-sizing: border-box;
-  outline : 1px dashed #333;
-  padding: 10px;
-  margin: 15px 0 0;
-  display: inline-block;
-}
-
-.container .card .face.face2 .content a:hover{
-  background: #333 ;
-  color: whitesmoke; 
-  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
-}
   </style>
 </head>
 
@@ -162,59 +25,64 @@
   <div style="display: contents">
     <div class="app svelte-1xh141e">
       <main>
-        <section class="block">
-          <div class="flex flex-col h-[670px] sm:h-[800px] justify-center bg-primary">
+        <section class="Header">
+          <div class="flex flex-col header  h-[670px] sm:h-[800px] justify-center bg-primary">
             <div class="absolute top-4 md:top-5 right-3 z-30"></div>
             <div class="absolute top-5 left-1/2 transform -translate-x-1/2" data-svelte-h="svelte-u1nz3d">
               <h1 class="text-2xl font-tiempos-headline">/dabl.club</h1>
             </div>
 
-            <div class="container mx-auto max-w-screen-xl px-6 md:px-8 ">
-              <div class="flex flex-col items-center relative lg:h-[50px] mt-16 -mb-8 md:mb-0" >
-                <figure id="bridgeContainer">
-                    <canvas id="bridge" width="750" height="495"></canvas>
-                  </figure>
+            <div class=" mx-auto max-w-screen-xl  px-6 md:px-8 ">
+              <div class=" flex flex-col items-center  relative lg:h-[50px] mt-16 -mb-8 md:mb-0">
+                <figure class="" id="bridgeContainer">
+                  <canvas id="bridge" width="750" height="495"></canvas>
+                </figure>
               </div>
 
-
-
               <div style="margin-top: 60px;"></div>
-              <div class="flex space-x-4 mb-5 mt-41 md:mb-7">
+              <div class="flex space-x-4 mb-5 mt-41 md:mb-7 header ">
                 <div class="w-4/6 md:w-1/9">
                   <p class="text-md sm:text-xl lg:text-3xl font-tiempos-headline text-[#41403F]"
                     data-svelte-h="svelte-1rbqes3">Building a <span class="border-dashed border-b-2"
                       style="border-color: #41403F; border-width: 0 0 2px; border-image: repeating-linear-gradient(to right, #41403F, #41403F 5px, transparent 5px, transparent 10px) 1/1 0 round">hub
                       for developers</span>
                     to co-work in an environment <span class="italic">that helps build passion for like minded
-                      people.</span></p>
-                  <div class="mt-4"><a href=" "  rel="noopener noreferrer"
-                      data-svelte-h="svelte-1gvl2f2"><button
+                      people.</span>
+                  </p>
+                  <div class="mt-4">
+                    <a href=" " rel="noopener noreferrer" data-svelte-h="svelte-1gvl2f2">
+                      <button
                         class="bg-black px-4 py-2 md:px-6 md:py-3 mb-1 rounded-full border border-gray-300 text-[10px] text-xs lg:text-sm text-white font-mono hover:bg-[#706F6B] transition-colors duration-500 ease-in-out"><img
                           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE4SURBVHgB7dhRTsJAEMbxb2uNaXyxN+AIeBM9gdzEehRv4FG8gdxgfTApFsy444MQwkOzszMLyfySBh4I+X+0kFDAOeecc/UECIxjXFwRHkLAHQoJDd7bm/5t9ushMG3iR3qDBQoLP3hsb+eNaCCQ4ot98oeowXLua1sI7Aj36Q1WEKCAJ8lZFA3oun6dHgZk2n7H50CyS1B0CUlwPGg/Pp2FNTJUGXAcn56/EOEVGcwHnIq/7voBmUwHlI5nZgM04pnJAK14pj5AM56pDtCOZ2oDLOKZygCreFZ8gGU8KzrAOp4VG1AjnhUZUCueiQfUjGeiAbXjWfYAzfj0L+0Tmjh+u4n0f4xxgND0FZd8k2CXDkp3O6BFI97MRcdPY1ydY/z8LzEd3AOq8GtTBJ8FPuCcc8459+cXTgrx8nKPCBcAAAAASUVORK5CYII="
                           alt="Arrow Down Right" class="w-3 h-3 md:w-6 md:h-6 inline-block">
-                        SPOT US</button></a> <button
+                        SPOT US
+                      </button>
+                    </a>
+                    <button
                       class="bg-primary px-4 py-2 md:px-6 md:py-3 rounded-full text-[10px] text-xs lg:text-sm font-mono border border-gray-300 hover:bg-cool-grey transition-colors duration-500 ease-in-out"
                       data-svelte-h="svelte-1chcusw"><img
                         src="data:image/png;base64,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"
                         alt="Spiral" class="w-3 h-3 md:w-6 md:h-6 inline-block">
-                      KNOW US</button></div>
+                      KNOW US
+                    </button>
+                  </div>
                 </div>
-                <div class="flex-1 flex flex-col items-end justify-end">
-                  <p class="font-mono text-[8px] md:text-sm text-[#706F6B]" data-svelte-h="svelte-i4stpt"> 
+                <!-- <div class="flex-1 flex flex-col items-end justify-end">
+                  <p class="font-mono text-[8px] md:text-sm text-[#706F6B]" data-svelte-h="svelte-i4stpt">
                   </p>
-                  <p class="font-graphik text-right text-[10px] md:text-sm">  </p>
-                </div>
+                  <p class="font-graphik text-right text-[10px] md:text-sm"> </p>
+                </div> -->
               </div>
             </div>
           </div>
-          <div class="" data-svelte-h="svelte-1wd7g07"><img
-              src="_app/immutable/assets/socratica-people.9a5c9bc2.png" alt="People at Socratica"
-              class="w-full min-h-40">
-            </div>
+
         </section>
+        <div class="" data-svelte-h="svelte-1wd7g07"><img src="_app/immutable/assets/socratica-people.9a5c9bc2.png"
+            alt="People at Socratica" class="w-full min-h-40">
+        </div>
 
         <section class="bg-primary" data-svelte-h="svelte-xm3ktq">
-          <div class="flex bg-primary pt-12 md:pt-40 md:pb-30" style="justify-content: center;">
+          <div class="flex bg-primary  md:pt-40 md:pb-40 centre" style="justify-content: center; ">
             <div class="container">
               <div class="card">
                 <div class="face face1">
@@ -224,49 +92,53 @@
                 </div>
                 <div class="face face2">
                   <div class="content">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                      voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae
+                      fugiat aspernatur alias corporis?</p>
                     <a href="#" type="button">Read More</a>
                   </div>
                 </div>
               </div>
-             
-             <div class="card">
+
+              <div class="card">
                 <div class="face face1">
                   <div class="content">
-                 <h3>EVENTS</h3>
+                    <h3>EVENTS</h3>
                   </div>
                 </div>
                 <div class="face face2">
                   <div class="content">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                      voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae
+                      fugiat aspernatur alias corporis?</p>
                     <a href="#" type="button">Read More</a>
                   </div>
                 </div>
-             </div>
-             
-             
-             <div class="card">
+              </div>
+              <div class="card">
                 <div class="face face1">
                   <div class="content">
-                     <h3>HACATHONS</h3>
+                    <h3>HACATHONS</h3>
                   </div>
                 </div>
                 <div class="face face2">
                   <div class="content">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                      voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae
+                      fugiat aspernatur alias corporis?</p>
                     <a href="#" type="button">Read More</a>
                   </div>
                 </div>
-             </div>
-           </div>
-          </div> 
+              </div>
+            </div>
+          </div>
         </section>
 
 
         <section id="what-we-are" data-svelte-h="svelte-16sxwz3">
           <div class="bg-primary bg-cover bg-center bg-no-repeat px-2"
             style="background-image: url(_app/immutable/assets/BackgroundLines.37b66c2a.png)">
-            <div class="flex justify-center items-center pt-40 pb-10"><span
+            <div class="flex justify-center items-center pt-24 pb-10"><span
                 class="px-4 py-2 md:px-6 md:py-3 rounded-full border-2 text-[10px] text-xs md:text-sm font-mono inline-block p-2"
                 style="border-color: #C6482C; color: #C6482C"><img
                   src="data:image/png;base64,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"
@@ -303,12 +175,13 @@
               </div>
             </div>
             <div class="flex items-center justify-center font-Graphik text-zinc-800 pt-5 md:pt-8 pb-40 px-12">
-              <div class="text-center text-[12px] md:text-sm"><span class="block md:hidden">Dabl is a IRL co-working
+              <div class="text-center text-[12px]  md:text-sm"><span class="block md:hidden">Dabl is a IRL
+                  co-working
                   space bringing together people <span class="italic"> who want to
                   </span>
                   make a dent in
-                  <a href="  " class="border-b-2"
-                    style="border-color: #706F6B; color: #706F6B;">the universe.</a>.</span>
+                  <a href="  " class="border-b-2" style="border-color: #706F6B; color: #706F6B;">the
+                    universe.</a>.</span>
                 <div class="hidden md:block">Dabl is a IRL co-working space bringing together people</div>
                 <div class="hidden md:block mx-auto"><span class="italic">who want to</span> make a dent in
                   <a href="  " class="border-b-2" style="border-color: #706F6B; color: #706F6B;">the
@@ -326,12 +199,13 @@
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA9CAYAAAD1VdrqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAdpSURBVHgB7Vu/cxNHFH57DpBJpfwFERVxFVEFN8EOZCaVOUoqpC4VOjeZAcdjeQDDpPGpSoncpUOmSgpA7pwKpTMVl/9A7hKEbvPe6pzsPa3u9n7JmYm/GQG3ul3t23379nvfLgDnOMf/AgIWjI7r1S4B1PSyvwBGnb4/ggWicsOfuN4qhOF1KcSqBGgAM1rDCDszxPcOHYDB/b4/gApRieFqVsOwHQrhwXxD0xA4UvbAcfZxEAIoGaUaTgZfkLAHIJtQLnqOEDtlDkBphj9177UnUnQgYYYFiAD/GKLLj+LlUJdSJi0DAtYVO5t9vwcloLDhNMsXpXyOxqwaf0CIAf51gD/UT5sxjAf1ENvBd+/iQKzOea03FmKjaDAsZDh1FDv4Go2u8+9wfe9MAPy8HaS2sX5HSHnX8HWArr9WxPVzGz7PaJphbLRV1npMGNxCxucyfF5nQil2tl74HagAD12vg1F+mxUH6PZX83iVAzlgMHqEU92qymjCVt/v4B6/wYrrFF8gB5YgI56497YlCFcvw/V854e+/zNUjFfHR0c3llf+wH/qv1+/ubxy8hK/gwzI5Ooq6kr5Ti+jWUCjfVggTG6P6/1ylvWeydXJxWMFAnqLNppAbi8EDPQy7NszyABrwx+7XpOt68ABsQNnBCRDLdCIEPGIh5QXWMLacAFsPy2ZQmaF+m0hunrZ0mzUnwsrw6fbV4yZBWVRxyIYI0ECNuvEJG3qWhmONNKLFYizc3Edav9ms34RoGlT187VpbzOKg3gP4KQ90XKWzb1Ug2PXKehFQ3Pcm1zbE0FC93dGzb1Pkp7AWWiRqgXSHFoeo+UFnyvLqZKyqgMBYUG/RNscxwZEykzAX8P84MD+W8yU/vR9Rrf9/1hUtuphs+MoAMzDe7eaj9HYuNG76vP41vtAP8a5BEQVDANoY3GNMdajk4TsLve9h+86HLqSn36Z9eJBirR8FRXl0wcCEkQ0IAd2ZNxCnmKOn6aOCBvdl3PA0uQoEF1pJBG2UoK8B6vex3WRy5spEb2VMMFy8AusR/BjjRTmqjhzO09Wb+XusdSHoAqDm1RyR0XcU7hsMmQZRjOMdEMJ5cE/UdQIcX1toGfPq+HiUwniVkRMwyn0pUO2q56qs24cXUoCBtXj83wUvJojh4gd8fPbUoaWGcBE4tnJoJBAyhmWdcQ27iKRKlFbaLrBVAibFw90J/HWrCbCVpSfqZ/9x47zmfKRDBIZ+N5wJipK8gc9SAbX26zW1gAKcg844bAoUfPRuT+CsSsJkIlE1qDBoIhZTvWKTRaV1VwGcQUWExQhqyPdf05LMNwJ40Z4R4a/1ru6c9pBMOGIAnWJgbU/dj3IL/QnycpWxkh1fCoE7GO6+vUkCi4PILjDA20x5pen5+jke6uP0bb5apWFOiTYUighjYaXCqBUX1hzGhpOkMDeqAfQVfsghacKIIjgWlSMnMBO/IB4ESxmgiRsXM7p4whboBLgLsxKj5d3SNCrufPYZYcVtuZZO6+xNbkpkERAeowRvExkRGmjScyOalIzztaMgYVt8sVH64ThA70wQJWhqM7U2OJee97ELdxNvbT2mJurwbBMGgzIKNRxfX0MpNOsGWZI1gZHuW9ulG1C2E8R6d3cDbIvVtiflQlI1u8EFXbjaQ6uHTWuNGEUEJ87xf26bK1ykqsy4mLjSPcay/PCyTq/ek5mIq4GGl/TzpSis7NPHpfTgfhBJ/782bQdKiRRWnNJC/vuu3XMdfCk5PNCg8RkkC8PkZxUfHd7HdbtvUzcfUJV1WFbNtqXGViqu/HeX1WxTeT4eR2LBDVLob2ymZZMKztXtacP0d2Fh9ZlR9PKeVCoO7UsBsXefR9KwKjg2b9kevt6+fWEaVcS6pHYoRk1HIW4jBNtuYnJrTNbR5k1wAzHxoSvvr82gArfof//Dgqqt+4siJevT0amN5/RArMdHAaKR+XDgXxcNDItRV9FfCtVhR8cMSdwfHRn5ARuY6JaUuSYibQbc8TGhxL5VMhNL+rjrDErL6f98ZFLsMJRB054yKhQU9LTyFZIpOAkeOAzwtNQoVy8QKnObkNJxBN5UID8uznfIvDDg6J7Dgpn7GBgFBbhosIwcSBDhRArqsgOgyMjtDbPLAnE0nALO8NxJfKiCSpoocauYKbjtfHR8HXyysnOIJ60GncvHKt9vLtb79CAaDRFMH1diktvY8e9AsURGHDCXRFY215BZe8RmcFXMtrPLn3N1e+/AmYPqcuFx34T6EEFHZ1HY/WPZSC4/kxXexD0bFlG32n10LV0olF97JvVJVqOMFkPFjeSSNWRgRlEdfISjecgAHPd5hKQ8Cyjuk2sroWipx/Zp+G6u7OVWI4Yc6FPEIAJGWJqTYmQsy/heLehnOy6m5UVWY4gdgWEQ+Z/ciHVJfWVoWX9UuJ6vNAnPvm8soBGvGpsKStxMiIf2/3/WOoEJXOuA5KXSVJS+bbyCO6/IvSVHer4v+ScYqFGX4KCmSkyzuR+9Nxz8TyEOAc5zjHOWzxNzKZrJKQ+Z/VAAAAAElFTkSuQmCC"
                   alt="Alien" class="w-4 h-4 md:w-6 md:h-6 inline-block">
                 WHO CAN COME</span></div>
-            <div class="pt-6 pl-8 md:pl-20 lg:pl-44 w-11/12 md:w-full">
+            <div class="pt-6 pl-8 md:pl-20 lg:pl-44 w-11/12 md:w-full ">
               <div class="text-[20px] text-xl xs:text-3xl sm:text-3xl md:text-4xl font-tiempos-headline">
-                Anyone that shows an inclination towards building something 
+                Anyone that shows an inclination towards building something
                 <br class="hidden md:block">bigger than them, this space is for <i>you</i>
               </div>
-              <div class="font-Graphik pt-2 md:pt-6 text-[11px] sm:text-[14px] sm:text-md">Just show up, we’ve got your back.
+              <div class="font-Graphik pt-2 md:pt-6 text-[11px] sm:text-[14px] sm:text-md">Just show up, we’ve got your
+                back.
               </div>
             </div> <img src="_app/immutable/assets/WhoCanCome.07b68336.png" alt="Who Can Come"
               class="-mt-18 sm:-mt-32 md:-mt-36 lg:-mt-80">
@@ -352,16 +226,35 @@
               <div class="p-5 pr-6 md:pr-10 lg:pr-40 text-zinc-800">
                 <div class="text-xl sm:text-3xl lg:text-4xl font-tiempos-headline lg:pt-9" style="font-weight: 300;">
                   Walk-in, 👋,
-                  <br> <span class="md:hidden">book your space and 🖋️️🎨get to coding.💻 <span
-                      class="italic"></span> </span> <span class="hidden md:inline">book your space and 🖋️️🎨</span> <span class="hidden md:inline">get to coding.💻  <br class=""> <span class="italic" style="color: #CFCCC4">+
-                       snacks are on us.</span>
+                  <br> <span class="md:hidden">book your space and 🖋️️🎨get to coding.💻 <span class="italic"></span>
+                  </span> <span class="hidden md:inline">book your space and 🖋️️🎨</span> <span
+                    class="hidden md:inline">get to coding.💻 <br class=""> <span class="italic"
+                      style="color: #CFCCC4">+
+                      snacks are on us.</span>
                 </div>
-                <div class="pt-5 text-[11px] md:text-[14px] text-zinc-800 font-inter"> Dabl is a IRL co-working space bringing together people who want to make a dent in the universe.
+                <div class="pt-5 text-[11px] md:text-[14px] text-zinc-800 font-inter"> Dabl is a IRL co-working space
+                  bringing together people who want to make a dent in the universe.
                 </div>
               </div>
             </div>
-          </div> <img src="_app/immutable/assets/Polaroid.c1c63f22.png" alt="Polaroid" class="mx-auto"
-            style="width: 1200px; height: 1000;">
+          </div>
+          <div class="cards">
+            <div class="cards-img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD-6v9bIw8zYMRaqp6a--7JEceQ9idANV7jg&usqp=CAU"
+                alt="a nighty sky">
+            </div>
+            <div class="cards-img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD-6v9bIw8zYMRaqp6a--7JEceQ9idANV7jg&usqp=CAU"
+                alt="a nighty sky">
+            </div>
+            <div class="cards-img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD-6v9bIw8zYMRaqp6a--7JEceQ9idANV7jg&usqp=CAU"
+                alt="a nighty sky">
+            </div>
+          </div>
         </section>
         <section data-svelte-h="svelte-6xgpya">
           <div class="flex bg-primary pb-40 pl-8 md:pl-16 lg:pl-20 bg-cover bg-center bg-no-repeat"
@@ -376,11 +269,11 @@
               <div class="py-5 md:pr-24 md:pr-40">
                 <div
                   class="text-xl xs:text-3xl sm:text-3xl md:text-4xl text-zinc-800 font-light font-tiempos-headline pt-4"
-                  style="font-weight: 300;">   We love doing something   
-                <br class="sm:hidden"> extra for our community.
+                  style="font-weight: 300;"> We love doing something
+                  <br class="sm:hidden"> extra for our community.
                   <div> Do stay.
                     <br class="sm:hidden md:hidden"> <a href=" " class="border-b-2"
-                      style="border-color: #706F6B; color: #706F6B; text-decoration: none;">  We’ve got more to say.</a>
+                      style="border-color: #706F6B; color: #706F6B; text-decoration: none;"> We’ve got more to say.</a>
                   </div>
                 </div>
               </div>
@@ -394,7 +287,7 @@
           <div class="pt-16">
             <h3 class="text-[#FBF8EF] font-base text-sm -tracking-[0.48px] leading-[20px] pb-4 font-mono"
               data-svelte-h="svelte-vxxkpp">MORE LINKS</h3>
-              <div
+            <div
               class="text-[#FBF8EF] opacity-80 font-light -tracking-[0.48px] leading-[33px] text-xs sm:text-xs md:text-xs lg:text-sm font-graphik">
               <p class="leading-[26px]"><a href="index.html">Back to Top</a></p>
               <p class="leading-[26px]"><a href="">About</a></p>
@@ -402,11 +295,8 @@
               <p class="leading-[26px]"><a href="">Get Involved</a></p>
               <p class="leading-[26px]"><a href="" target="_blank">Easter
                   Egg</a></p>
-              <p class="leading-[26px]"><a
-                  href=""
-                  target="_blank">Code of Conduct</a></p>
-              <p class="leading-[26px]"><a href=""
-                  target="_blank">Donate</a></p>
+              <p class="leading-[26px]"><a href="" target="_blank">Code of Conduct</a></p>
+              <p class="leading-[26px]"><a href="" target="_blank">Donate</a></p>
             </div>
           </div>
           <div class="pt-16" data-svelte-h="svelte-1qw3q7f">
@@ -444,7 +334,7 @@
       </footer>
     </div>
   </div>
-  <script  src="/script.js"></script>
+  <script src="/script.js"></script>
   <script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
 </body>
 
