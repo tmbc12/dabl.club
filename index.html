@@ -14,6 +14,30 @@
   <meta name="description"
     content="">
   <!-- HEAD_svelte-1txeix6_END -->
+  <style>
+
+#bridge {
+  display: block;
+  margin: 0 auto;
+  background-image: url("https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/cc5fc7d4-a9bc-ff12-a13c-636ee17ef12e.png");
+  background-image: -webkit-image-set(url("https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/cc5fc7d4-a9bc-ff12-a13c-636ee17ef12e.png") 1x, url("https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/cc5fc7d4-a9bc-ff12-a13c-636ee17ef12e.png") 2x);
+  background-size: cover;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  cursor: crosshair;
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+}
+
+#bridgeContainer {
+  text-align: center;
+  font-family: Avenir, sans-serif;
+}
+
+#bridgeContainer figcaption {
+  margin-top: 2rem;
+}
+  </style>
 </head>
 
 <body data-sveltekit-preload-data="hover">
@@ -26,11 +50,16 @@
             <div class="absolute top-5 left-1/2 transform -translate-x-1/2" data-svelte-h="svelte-u1nz3d">
               <h1 class="text-2xl font-tiempos-headline">/dabl.club</h1>
             </div>
+
             <div class="container mx-auto max-w-screen-xl px-6 md:px-8  ">
-              <div class="flex flex-col items-center relative lg:h-[50px] mt-16 -mb-8 md:mb-0"><button
-                  class="absolute inset-0 opacity-0 cursor-pointer"></button> <img id="socraticaLogo"
-                  src="https://mcusercontent.com/4d495ae0bbe9396d5b9e37d4a/images/b75eadf5-ae81-1b48-f5b3-3abbdb7d13cc.png"
-                  alt="Socratica Logo" class="h-[50px] w-auto object-contain "></div>
+
+
+              <div class="flex flex-col items-center relative lg:h-[50px] mt-16 -mb-8 md:mb-0" id="bridgeContainer">
+                    <canvas id="bridge" width="750" height="495"></canvas>
+              </div>
+
+
+
               <div style="margin-top: 60px;"></div>
               <div class="flex space-x-4 mb-5 mt-41 md:mb-7">
                 <div class="w-4/6 md:w-1/9">
@@ -60,9 +89,10 @@
               </div>
             </div>
           </div>
-          <div class="-mt-28" data-svelte-h="svelte-1wd7g07"><img
+          <div class="" data-svelte-h="svelte-1wd7g07"><img
               src="_app/immutable/assets/socratica-people.9a5c9bc2.png" alt="People at Socratica"
-              class="w-full min-h-40"></div>
+              class="w-full min-h-40">
+            </div>
         </section>
         <section id="what-we-are" data-svelte-h="svelte-16sxwz3">
           <div class="bg-primary bg-cover bg-center bg-no-repeat px-2"
@@ -218,14 +248,7 @@
               <p class="leading-[26px]"><a href="">INSTAGRAM</a></p>
               <p class="leading-[26px]"><a href="">TWITTER</a></p>
               <p class="leading-[26px]"><a href="">FACEBOOK</a></p>
-              <!-- <p class="leading-[26px]"><a href="get-involved.html">Get Involved</a></p>
-              <p class="leading-[26px]"><a href="https://www.youtube.com/watch?v=ydYDqZQpim8" target="_blank">Easter
-                  Egg</a></p>
-              <p class="leading-[26px]"><a
-                  href="https://socratica.notion.site/Code-of-Conduct-52fb005f7e3a452096e235995a2f92e5"
-                  target="_blank">Code of Conduct</a></p>
-              <p class="leading-[26px]"><a href="https://donate.stripe.com/5kA6qZcondXE8Te008"
-                  target="_blank">Donate</a></p> -->
+             
             </div>
           </div>
           <div class="pt-16 col-span-2">
@@ -244,32 +267,8 @@
           alt="Sponsor Logos" class="px-8 pt-[23px] pb-5">
       </footer>
     </div>
-
-    <script>
-      {
-        __sveltekit_1refjg2 = {
-          base: new URL(".", location).pathname.slice(0, -1),
-          env: {}
-        };
-
-        const element = document.currentScript.parentElement;
-
-        const data = [null, null];
-
-        Promise.all([
-          import("./_app/immutable/entry/start.0884d11e.js"),
-          import("./_app/immutable/entry/app.1bcf1b08.js")
-        ]).then(([kit, app]) => {
-          kit.start(app, element, {
-            node_ids: [0, 2],
-            data,
-            form: null,
-            error: null
-          });
-        });
-      }
-    </script>
   </div>
+  <script  src="/script.js"></script>
 </body>
 
 </html>
